@@ -10,11 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Covidcare',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
-        fontFamily: "Poppins",
-        primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Covidcare'),
     );
@@ -33,7 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    
         appBar: AppBar(
+          backgroundColor:Color(0xff6c63ff),
           title: Center(
             child: Text(
               'Covidcare',
@@ -41,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
         body: SingleChildScrollView(
-                  child: Column(
+          child: Column(
             children: [
               Image.asset(
                 'images/pict.png',
@@ -50,24 +51,56 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  InkWell(child: CircularButton(height: 130, color: Colors.purple[900], width: 130,txt: 'Siddha',),onTap: () => {},),
-                  InkWell(child: CircularButton(height: 130, color: Colors.purple[900], width: 130,txt: 'Ayurvedha',),onTap: () => {},)
+                  InkWell(
+                    child: CircularButton(
+                      height: 130,
+                      color: Color(0xff6c63ff),
+                      width: 130,
+                      txt: 'Siddha',
+                    ),
+                    onTap: () => {},
+                  ),
+                  InkWell(
+                    child: CircularButton(
+                      height: 130,
+                      color: Color(0xff6c63ff),
+                      width: 130,
+                      txt: 'Ayurvedha',
+                    ),
+                    onTap: () => {},
+                  )
                 ],
               ),
-              SizedBox(height: 30,),
+              //6C63FF
+              SizedBox(
+                height: 30,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  InkWell(child: CircularButton(height: 130, color: Colors.purple[900], width: 130,txt: 'Allopathy',),
-                  onTap: () => {},
+                  InkWell(
+                    child: CircularButton(
+                      height: 130,
+                      color: Color(0xff6c63ff),
+                      width: 130,
+                      txt: 'Allopathy',
+                    ),
+                    onTap: () => {},
                   ),
-                  InkWell(child: CircularButton(height: 130, color: Colors.purple[900], width: 130,txt: 'Homeopathy',),onTap: () => {},)
+                  InkWell(
+                    child: CircularButton(
+                      height: 130,
+                      color: Color(0xff6c63ff),
+                      width: 130,
+                      txt: 'Homeopathy',
+                    ),
+                    onTap: () => {},
+                  )
                 ],
               )
-
             ],
           ),
-        )); // This trailing comma makes auto-formatting nicer for build methods.
+        ));
   }
 }
 
@@ -77,7 +110,7 @@ class CircularButton extends StatelessWidget {
   final Color color;
   final String txt;
 
-  const CircularButton({Key key, this.width, this.height, this.color,this.txt})
+  const CircularButton({Key key, this.width, this.height, this.color, this.txt})
       : super(key: key);
 
   @override
@@ -86,7 +119,12 @@ class CircularButton extends StatelessWidget {
       decoration: BoxDecoration(color: color, shape: BoxShape.circle),
       width: width,
       height: height,
-      child: SafeArea(child: Center(child: Text(txt,style: TextStyle(fontSize: 20,color: Colors.white),))),
+      child: SafeArea(
+          child: Center(
+              child: Text(
+        txt,
+        style: TextStyle(fontSize: 20, color: Colors.white),
+      ))),
     );
   }
 }
