@@ -1,6 +1,9 @@
+import 'package:covidcare/allopathy.dart';
+import 'package:covidcare/homeopathy.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
-
+import 'siddha.dart';
+import 'ayruvedha.dart';
 void main() {
   runApp(MyApp());
 }
@@ -32,9 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
         appBar: AppBar(
-          backgroundColor:Color(0xff6c63ff),
+          backgroundColor: Color(0xff6c63ff),
           title: Center(
             child: Text(
               'Covidcare',
@@ -58,7 +60,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 130,
                       txt: 'Siddha',
                     ),
-                    onTap: () => {},
+                    onTap: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Siddha()),
+                      )
+                    },
                   ),
                   InkWell(
                     child: CircularButton(
@@ -67,7 +74,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 130,
                       txt: 'Ayurvedha',
                     ),
-                    onTap: () => {},
+                    onTap: () => {
+                       Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Ayurvedha()),
+                      )
+                    },
                   )
                 ],
               ),
@@ -85,7 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 130,
                       txt: 'Allopathy',
                     ),
-                    onTap: () => {},
+                    onTap: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Allopayth()),
+                      )
+                    },
                   ),
                   InkWell(
                     child: CircularButton(
@@ -94,7 +111,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 130,
                       txt: 'Homeopathy',
                     ),
-                    onTap: () => {},
+                    onTap: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Homeopathy()),
+                      )
+                    },
                   )
                 ],
               )
