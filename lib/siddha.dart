@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 
 class Siddha extends StatefulWidget {
   @override
@@ -13,9 +13,10 @@ class _SiddhaState extends State<Siddha> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Siddha'),
-        backgroundColor: Colors.red,
+        backgroundColor: Color(0xff2C5F2D),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -48,14 +49,14 @@ Widget buildColoredCard(tit, medicine, dose) => Card(
       elevation: 8,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(34),
       ),
       child: Container(
         height: 280,
         width: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.black, Colors.black],
+            colors: [Color(0xff2C5F2D), Color(0xff2C5F2D)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -69,7 +70,7 @@ Widget buildColoredCard(tit, medicine, dose) => Card(
                 tit,
                 style: TextStyle(
                   fontSize: 30,
-                  color: Colors.white,
+                  color: Colors.yellow[700],
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -80,7 +81,7 @@ Widget buildColoredCard(tit, medicine, dose) => Card(
               'Medicine',
               style: TextStyle(
                   fontSize: 25,
-                  color: Color(0xffE50914),
+                  color: Colors.yellow[700],
                   fontWeight: FontWeight.bold),
             ),
             Text(
@@ -96,7 +97,7 @@ Widget buildColoredCard(tit, medicine, dose) => Card(
               'Dosage',
               style: TextStyle(
                   fontSize: 25,
-                  color: Color(0xffE50914),
+                  color: Colors.yellow[700],
                   fontWeight: FontWeight.bold),
             ),
             Text(
