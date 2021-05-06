@@ -14,7 +14,7 @@ class _AyurvedhaState extends State<Ayurvedha> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          title: Text('Ayurvedha',
+          title: Text('Ayurveda',
               style: TextStyle(
                 fontFamily: 'Nunito Sans',
               )),

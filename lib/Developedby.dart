@@ -25,7 +25,7 @@ Widget developColoredCard(tit) => Card(
         borderRadius: BorderRadius.circular(44),
       ),
       child: Container(
-        height: 1000,
+        height: 900,
         //#63FF87
         width: double.maxFinite,
         decoration: BoxDecoration(

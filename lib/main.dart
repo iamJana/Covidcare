@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 130,
                     color: Colors.black,
                     width: 130,
-                    txt: 'Ayurvedha',
+                    txt: 'Ayurveda',
                   ),
                   onTap: () => {
                     Navigator.push(
