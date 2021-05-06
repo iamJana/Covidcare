@@ -1,5 +1,5 @@
 import 'package:covidcare/unani.dart';
-import 'package:covidcare/homeopathy.dart';
+import 'package:covidcare/naturopathy.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'siddha.dart';
@@ -145,11 +145,11 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 20,
             ),
             InkWell(
-              child: mainColoredCard('Homeopathy'),
+              child: mainColoredCard('Naturopathy'),
               onTap: () => {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Homeopathy()),
+                  MaterialPageRoute(builder: (context) => Naturopathy()),
                 )
               },
             ),

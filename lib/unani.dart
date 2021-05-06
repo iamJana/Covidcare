@@ -3,12 +3,12 @@ import 'buildcard.dart';
 
 class Unani extends StatefulWidget {
   @override
-  _AllopaythState createState() => _AllopaythState();
+  _UnaniState createState() => _UnaniState();
 }
 
 const tc = Color(0xffffb01a);
 
-class _AllopaythState extends State<Unani> {
+class _UnaniState extends State<Unani> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
