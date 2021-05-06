@@ -4,7 +4,7 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
       elevation: 28,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(54),
+        borderRadius: BorderRadius.circular(44),
       ),
       child: Container(
         height: 300,
