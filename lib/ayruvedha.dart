@@ -12,6 +12,7 @@ class _AyurvedhaState extends State<Ayurvedha> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       backgroundColor: Colors.black,
       appBar:
           AppBar(title: Text('Ayurvedha'), backgroundColor: Color(0xff2C5F2D)),
       body: SingleChildScrollView(
