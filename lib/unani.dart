@@ -13,7 +13,12 @@ class _UnaniState extends State<Unani> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(title: Text('Unani'), backgroundColor: Colors.black),
+      appBar: AppBar(
+          title: Text('Unani',
+              style: TextStyle(
+                fontFamily: 'Nunito Sans',
+              )),
+          backgroundColor: Colors.black),
       body: SingleChildScrollView(
         child: (Column(
           children: [

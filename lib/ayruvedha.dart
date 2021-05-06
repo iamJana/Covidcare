@@ -13,26 +13,30 @@ class _AyurvedhaState extends State<Ayurvedha> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar:
-          AppBar(title: Text('Ayurvedha'), backgroundColor: Colors.black),
+      appBar: AppBar(
+          title: Text('Ayurvedha',
+              style: TextStyle(
+                fontFamily: 'Nunito Sans',
+              )),
+          backgroundColor: Colors.black),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            buildColoredCard('Fever (Jwara)', 'MahaSudarshanghanVati',
+            buildColoredCard('Fever', 'MahaSudarshanghanVati',
                 '500 mg TDS with lukewarmwater', tc),
             buildColoredCard('Sore throat',
                 'Vyoshadivati/ LavangadiVati/ Khadiradivati', '2 tab TDS', tc),
-            buildColoredCard('Nasalcongestion(Pratishyaya)', 'Haridrakhand-',
+            buildColoredCard('Nasalcongestion', 'Haridrakhand-',
                 '3 - 5 gm BD with lukewarm water/ milk', tc),
             buildColoredCard('Myalgia', 'Devadaryadikwatha',
                 '30 - 40 ml BD before food', tc),
             buildColoredCard(
-                'Cough(Vataja Kasa)',
+                'Cough',
                 'Talisadi Churna ',
                 '(4 g)+ Madhuyashtichurna (2 g) BDwith honey/ lukewarm water',
                 tc),
-            buildColoredCard('Dehydrationfeatures (Trishanadue to Jwara)',
-                'Shadangapaneeya', '40 ml tid/as per requirement', tc),
+            buildColoredCard('Dehydrationfeatures', 'Shadangapaneeya',
+                '40 ml tid/as per requirement', tc),
           ],
         ),
       ),

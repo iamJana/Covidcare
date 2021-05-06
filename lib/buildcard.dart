@@ -7,7 +7,7 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
         borderRadius: BorderRadius.circular(44),
       ),
       child: Container(
-        height: 300,
+        height: 350,
         width: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(

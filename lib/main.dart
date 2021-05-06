@@ -1,3 +1,4 @@
+import 'package:covidcare/resourse.dart';
 import 'package:covidcare/unani.dart';
 import 'package:covidcare/naturopathy.dart';
 import 'package:flutter/material.dart';
@@ -93,6 +94,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) => Developed(),
                         ),
                       )
+                    }),
+            CustomList(
+                Icons.book_outlined,
+                'Resources',
+                () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Resourse()),
+                      ),
                     }),
           ],
         ),

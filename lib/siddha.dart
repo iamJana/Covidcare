@@ -17,7 +17,12 @@ class _SiddhaState extends State<Siddha> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Siddha'),
+        title: Text(
+          'Siddha',
+          style: TextStyle(
+            fontFamily: 'Nunito Sans',
+          ),
+        ),
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
@@ -52,7 +57,7 @@ class _SiddhaState extends State<Siddha> {
                 '5-10 ml twice daily for 15 days', tc),
             buildColoredCard(
                 'Nasal Congestion, Loss of smell',
-                'Manjal kombupugai / Milagu pugai, Oma pottanam, Neerkovai mathirai.',
+                'Manjal kombupugai / Milagu pugai.',
                 'Use as advised by physician.',
                 tc),
           ],

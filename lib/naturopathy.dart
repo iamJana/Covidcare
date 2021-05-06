@@ -14,14 +14,17 @@ class _NaturopathyState extends State<Naturopathy> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Naturopathy'),
+        title: Text('Naturopathy',
+            style: TextStyle(
+              fontFamily: 'Nunito Sans',
+            )),
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            buildColoredCard('Cold, Coryza-Running nose,Nasal Congestion',
-                'Steam Inhalation with Tulsi, peppermint', 'NIL', tc),
+            buildColoredCard('Cold, Coryza-Running nose',
+                'Steam Inhalation with Tulsi', 'NIL', tc),
             buildColoredCard(
                 'Sore throat,',
                 'Hot saline water gargle. Gargling with neem water decoction with honey',
