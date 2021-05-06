@@ -4,14 +4,14 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
       elevation: 28,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(34),
+        borderRadius: BorderRadius.circular(54),
       ),
       child: Container(
-        height: 260,
+        height: 300,
         width: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xff2C5F2D), Color(0xff2C5F2D)],
+            colors: [Colors.black, Colors.black],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -24,6 +24,7 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
               child: Text(
                 tit,
                 style: TextStyle(
+                  fontFamily: 'Nunito Sans',
                   fontSize: 30,
                   color: tc,
                   fontWeight: FontWeight.bold,
@@ -35,11 +36,15 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
             Text(
               'Medicine',
               style: TextStyle(
-                  fontSize: 25, color: tc, fontWeight: FontWeight.bold),
+                  fontFamily: 'Nunito Sans',
+                  fontSize: 25,
+                  color: tc,
+                  fontWeight: FontWeight.bold),
             ),
             Text(
               medicine,
               style: TextStyle(
+                fontFamily: 'Nunito Sans',
                 fontSize: 20,
                 color: Colors.white,
               ),
@@ -49,11 +54,15 @@ Widget buildColoredCard(tit, medicine, dose, tc) => Card(
             Text(
               'Dosage',
               style: TextStyle(
-                  fontSize: 25, color: tc, fontWeight: FontWeight.bold),
+                  fontFamily: 'Nunito Sans',
+                  fontSize: 25,
+                  color: tc,
+                  fontWeight: FontWeight.bold),
             ),
             Text(
               dose,
               style: TextStyle(
+                fontFamily: 'Nunito Sans',
                 fontSize: 20,
                 // #E50914
                 color: Colors.white,

@@ -6,16 +6,16 @@ class Naturopathy extends StatefulWidget {
   _NaturopathyState createState() => _NaturopathyState();
 }
 
-const tc = Color(0xffffb01a);
+const tc = Color(0xffE50914);
 
 class _NaturopathyState extends State<Naturopathy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Naturopathy'),
-        backgroundColor: Color(0xff2C5F2D),
+        backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -34,7 +34,7 @@ class _NaturopathyState extends State<Naturopathy> {
                 tc),
             buildColoredCard(
                 'Headaches',
-                'Hot foot Immersion for headaches with cold compress on head, Aromatherapy with Tulsi or lavender oils.',
+                'Hot foot Immersion for headaches with cold compress on head.',
                 'NIL',
                 tc),
             buildColoredCard('Fever',
@@ -45,7 +45,7 @@ class _NaturopathyState extends State<Naturopathy> {
                 'Lemon water with honey to boost immunity', 'NIL', tc),
             buildColoredCard(
                 'Stress, Anxiety Depression',
-                'Aroma therapy with lavender, Basil or lemon grass oils(Inhalation/steam inhalation)',
+                'Aroma therapy with lavender, Basil or lemon grass oils',
                 'NIL',
                 tc)
           ],

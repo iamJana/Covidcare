@@ -9,16 +9,16 @@ class Siddha extends StatefulWidget {
 String tit;
 String medicine;
 String dose;
-const tc = Color(0xffffb01a);
+const tc = Color(0xffE50914);
 
 class _SiddhaState extends State<Siddha> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Siddha'),
-        backgroundColor: Color(0xff2C5F2D),
+        backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         child: Column(

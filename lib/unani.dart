@@ -6,17 +6,14 @@ class Unani extends StatefulWidget {
   _UnaniState createState() => _UnaniState();
 }
 
-const tc = Color(0xffffb01a);
+const tc = Color(0xffE50914);
 
 class _UnaniState extends State<Unani> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Text('Unani'),
-        backgroundColor: Color(0xff2C5F2D),
-      ),
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: Text('Unani'), backgroundColor: Colors.black),
       body: SingleChildScrollView(
         child: (Column(
           children: [
