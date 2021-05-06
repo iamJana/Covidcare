@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 Widget buildColoredCard(tit, medicine, dose, tc) => Card(
-      shadowColor: Colors.red,
-      elevation: 8,
+      elevation: 28,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(34),
