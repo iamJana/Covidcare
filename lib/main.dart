@@ -214,7 +214,7 @@ class CustomList extends StatelessWidget {
             splashColor: Colors.orangeAccent,
             onTap: onTap,
             child: Container(
-              height: 50,
+              height: 80,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

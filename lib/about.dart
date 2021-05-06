@@ -10,7 +10,12 @@ class _AboutState extends State<About> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About'),
+        title: Text(
+          'About',
+          style: TextStyle(
+            fontFamily: 'Nunito Sans',
+          ),
+        ),
         backgroundColor: Colors.black,
       ),
     );

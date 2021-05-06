@@ -5,7 +5,12 @@ class Developed extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Team Naruto'),
+        title: Text(
+          'Team Naruto',
+          style: TextStyle(
+            fontFamily: 'Nunito Sans',
+          ),
+        ),
         backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(child: developColoredCard('Team ID: ID141')),
@@ -20,7 +25,7 @@ Widget developColoredCard(tit) => Card(
         borderRadius: BorderRadius.circular(44),
       ),
       child: Container(
-        height: 600,
+        height: 700,
         //#63FF87
         width: double.maxFinite,
         decoration: BoxDecoration(
